@@ -3,7 +3,7 @@ Simple Windows application for creating mist.ini mappings.
 
 Usage
 ---
-Plug joystick to PC and start mapper.exe. Press any button on joystick to highlight position, and select coresponding MiST action. 
+Plug joystick to PC and start mapper.exe. Press any button on joystick to highlight position, and select coresponding MiST action. When you have finished with mappings copy generated line to mist.ini.
 
 Contributions
 ---
