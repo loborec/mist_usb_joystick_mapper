@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.940,D:\ProgrammingXE\mist-usb-joystick-mapper\mapper.dproj=D:\ProgrammingXE\joystick\joystick.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.617,D:\ProgrammingXE\joystick\joystick.dproj=C:\Users\Dubravko\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.797,D:\ProgrammingXE\mist-usb-joystick-mapper\mapper.dproj=D:\ProgrammingXE\mist_usb_joystick_mapper\mapper.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.468,D:\ProgrammingXE\joystick\unMain.dfm=D:\ProgrammingXE\mist_usb_joystick_mapper\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.499,D:\ProgrammingXE\joystick\unMain.dfm=C:\Users\Dubravko\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.779,=C:\Users\Dubravko\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.468,D:\ProgrammingXE\joystick\unMain.pas=D:\ProgrammingXE\mist_usb_joystick_mapper\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.499,D:\ProgrammingXE\joystick\unMain.pas=C:\Users\Dubravko\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.118,=C:\Users\Dubravko\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.920,=C:\Users\Dubravko\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.580,=C:\Users\Dubravko\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
