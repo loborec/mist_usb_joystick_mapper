@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, NLDJoystick, Vcl.StdCtrls, Vcl.DBCtrls,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, NLDJoystick, Vcl.StdCtrls,
   Vcl.ExtCtrls;
 
 const
@@ -46,22 +46,6 @@ type
     pa15: TPanel;
     cb15: TComboBox;
     edLine: TEdit;
-    cb0b: TComboBox;
-    cb1b: TComboBox;
-    cb2b: TComboBox;
-    cb3b: TComboBox;
-    cb4b: TComboBox;
-    cb5b: TComboBox;
-    cb6b: TComboBox;
-    cb7b: TComboBox;
-    cb8b: TComboBox;
-    cb9b: TComboBox;
-    cb10b: TComboBox;
-    cb11b: TComboBox;
-    cb12b: TComboBox;
-    cb13b: TComboBox;
-    cb14b: TComboBox;
-    cb15b: TComboBox;
     procedure NLDJoystick1ButtonDown(Sender: TNLDJoystick;
       const Buttons: TJoyButtons);
     procedure FormShow(Sender: TObject);
@@ -205,30 +189,25 @@ begin
 end;
 
 procedure TfMain.ComposeLine;
-function GetHex(ComboBox, ComboBoxB: TComboBox):Integer;
-const Values: array [1..16] of integer = ($1, $2, $4, $8, $10, $20, $40, $80, $100, $200, $400, $800, $1000, $2000, $4000, $8000);
+function GetHex(ComboBox: TComboBox):Integer;
+const Values: array [1..21] of integer = ($1, $2, $4, $8, $10, $20, $40, $80, $100, $200, $400, $800, $1000, $2000, $4000, $8000, $80+$10, $80+$20, $80+$400, $80+$800, $80+$40);
 begin
    if (ComboBox.ItemIndex=0) or (ComboBox.ItemIndex=-1) then
       Result:=0
    else
       Result:=Values[ComboBox.ItemIndex];
 
-   if (ComboBoxB.ItemIndex=0) or (ComboBoxB.ItemIndex=-1) then
-   begin
 
-   end
-   else
-      Result:=Result+Values[ComboBoxB.ItemIndex];
 end;
 var
    s:string;
 begin
    s:=Format('joystick_remap=%s,%s,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x',
       [IntToHex(NLDJoystick1.Mid, 4), IntToHex(NLDJoystick1.Pid, 4),
-      GetHex(cb0, cb0b), GetHex(cb1, cb1b), GetHex(cb2, cb2b), GetHex(cb3, cb3b),
-      GetHex(cb4, cb4b), GetHex(cb5, cb5b), GetHex(cb6, cb6b), GetHex(cb7, cb7b),
-      GetHex(cb8, cb8b), GetHex(cb9, cb9b), GetHex(cb10, cb10b), GetHex(cb11, cb11b),
-      GetHex(cb12, cb12b), GetHex(cb13, cb13b), GetHex(cb14, cb14b), GetHex(cb15, cb15b)]);
+      GetHex(cb0), GetHex(cb1), GetHex(cb2), GetHex(cb3),
+      GetHex(cb4), GetHex(cb5), GetHex(cb6), GetHex(cb7),
+      GetHex(cb8), GetHex(cb9), GetHex(cb10), GetHex(cb11),
+      GetHex(cb12), GetHex(cb13), GetHex(cb14), GetHex(cb15)]);
 
    while rights(s,2)=',0' do
       s:=rdel(s,2);

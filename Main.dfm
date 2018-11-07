@@ -2,8 +2,8 @@ object fMain: TfMain
   Left = 0
   Top = 0
   Caption = 'MiST USB Joystick Mapper'
-  ClientHeight = 233
-  ClientWidth = 529
+  ClientHeight = 229
+  ClientWidth = 432
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -27,9 +27,9 @@ object fMain: TfMain
     TabOrder = 0
   end
   object cb0: TComboBox
-    Left = 41
+    Left = 43
     Top = 17
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 1
@@ -51,7 +51,12 @@ object fMain: TfMain
       'L2'
       'R2'
       'L3'
-      'R3')
+      'R3'
+      'Enter key'
+      'Space bar'
+      'ESC key'
+      'F1 key'
+      'F12 key')
   end
   object pa1: TPanel
     Left = 16
@@ -67,7 +72,7 @@ object fMain: TfMain
   object cb1: TComboBox
     Left = 41
     Top = 44
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 3
@@ -87,7 +92,7 @@ object fMain: TfMain
   object cb2: TComboBox
     Left = 41
     Top = 71
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 5
@@ -107,14 +112,14 @@ object fMain: TfMain
   object cb3: TComboBox
     Left = 41
     Top = 98
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 7
     OnChange = ComboChange
   end
   object pa4: TPanel
-    Left = 184
+    Left = 152
     Top = 17
     Width = 21
     Height = 21
@@ -125,16 +130,16 @@ object fMain: TfMain
     TabOrder = 8
   end
   object cb4: TComboBox
-    Left = 209
+    Left = 177
     Top = 17
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 9
     OnChange = ComboChange
   end
   object pa5: TPanel
-    Left = 184
+    Left = 152
     Top = 44
     Width = 21
     Height = 21
@@ -145,16 +150,16 @@ object fMain: TfMain
     TabOrder = 10
   end
   object cb5: TComboBox
-    Left = 209
+    Left = 177
     Top = 44
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 11
     OnChange = ComboChange
   end
   object pa6: TPanel
-    Left = 184
+    Left = 152
     Top = 71
     Width = 21
     Height = 21
@@ -165,9 +170,9 @@ object fMain: TfMain
     TabOrder = 12
   end
   object cb6: TComboBox
-    Left = 209
+    Left = 177
     Top = 71
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 13
@@ -192,7 +197,7 @@ object fMain: TfMain
       'R3')
   end
   object pa7: TPanel
-    Left = 184
+    Left = 152
     Top = 98
     Width = 21
     Height = 21
@@ -203,16 +208,16 @@ object fMain: TfMain
     TabOrder = 14
   end
   object cb7: TComboBox
-    Left = 209
+    Left = 177
     Top = 98
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 15
     OnChange = ComboChange
   end
   object pa8: TPanel
-    Left = 184
+    Left = 152
     Top = 125
     Width = 21
     Height = 21
@@ -223,16 +228,16 @@ object fMain: TfMain
     TabOrder = 16
   end
   object cb8: TComboBox
-    Left = 209
+    Left = 177
     Top = 125
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 17
     OnChange = ComboChange
   end
   object pa9: TPanel
-    Left = 184
+    Left = 152
     Top = 152
     Width = 21
     Height = 21
@@ -243,16 +248,16 @@ object fMain: TfMain
     TabOrder = 18
   end
   object cb9: TComboBox
-    Left = 209
+    Left = 177
     Top = 152
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 19
     OnChange = ComboChange
   end
   object pa10: TPanel
-    Left = 352
+    Left = 288
     Top = 17
     Width = 21
     Height = 21
@@ -263,16 +268,16 @@ object fMain: TfMain
     TabOrder = 20
   end
   object cb10: TComboBox
-    Left = 377
+    Left = 313
     Top = 17
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 21
     OnChange = ComboChange
   end
   object pa11: TPanel
-    Left = 352
+    Left = 288
     Top = 44
     Width = 21
     Height = 21
@@ -283,16 +288,16 @@ object fMain: TfMain
     TabOrder = 22
   end
   object cb11: TComboBox
-    Left = 377
+    Left = 313
     Top = 44
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 23
     OnChange = ComboChange
   end
   object pa12: TPanel
-    Left = 352
+    Left = 288
     Top = 71
     Width = 21
     Height = 21
@@ -303,16 +308,16 @@ object fMain: TfMain
     TabOrder = 24
   end
   object cb12: TComboBox
-    Left = 377
+    Left = 313
     Top = 71
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 25
     OnChange = ComboChange
   end
   object pa13: TPanel
-    Left = 352
+    Left = 288
     Top = 98
     Width = 21
     Height = 21
@@ -323,16 +328,16 @@ object fMain: TfMain
     TabOrder = 26
   end
   object cb13: TComboBox
-    Left = 377
+    Left = 313
     Top = 98
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 27
     OnChange = ComboChange
   end
   object pa14: TPanel
-    Left = 352
+    Left = 288
     Top = 125
     Width = 21
     Height = 21
@@ -343,16 +348,16 @@ object fMain: TfMain
     TabOrder = 28
   end
   object cb14: TComboBox
-    Left = 377
+    Left = 313
     Top = 125
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 29
     OnChange = ComboChange
   end
   object pa15: TPanel
-    Left = 352
+    Left = 288
     Top = 152
     Width = 21
     Height = 21
@@ -363,9 +368,9 @@ object fMain: TfMain
     TabOrder = 30
   end
   object cb15: TComboBox
-    Left = 377
+    Left = 313
     Top = 152
-    Width = 60
+    Width = 100
     Height = 21
     Style = csDropDownList
     TabOrder = 31
@@ -377,186 +382,6 @@ object fMain: TfMain
     Width = 345
     Height = 21
     TabOrder = 32
-  end
-  object cb0b: TComboBox
-    Left = 107
-    Top = 17
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 33
-    OnChange = ComboChange
-    Items.Strings = (
-      ''
-      'RIGHT'
-      'LEFT'
-      'DOWN'
-      'UP'
-      'A'
-      'B'
-      'SELECT'
-      'START'
-      'X'
-      'Y'
-      'L'
-      'R'
-      'L2'
-      'R2'
-      'L3'
-      'R3')
-  end
-  object cb1b: TComboBox
-    Left = 107
-    Top = 44
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 34
-    OnChange = ComboChange
-  end
-  object cb2b: TComboBox
-    Left = 107
-    Top = 71
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 35
-    OnChange = ComboChange
-  end
-  object cb3b: TComboBox
-    Left = 107
-    Top = 98
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 36
-    OnChange = ComboChange
-  end
-  object cb4b: TComboBox
-    Left = 275
-    Top = 17
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 37
-    OnChange = ComboChange
-  end
-  object cb5b: TComboBox
-    Left = 275
-    Top = 44
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 38
-    OnChange = ComboChange
-  end
-  object cb6b: TComboBox
-    Left = 275
-    Top = 71
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 39
-    OnChange = ComboChange
-    Items.Strings = (
-      ''
-      'RIGHT'
-      'LEFT'
-      'DOWN'
-      'UP'
-      'A'
-      'B'
-      'SELECT'
-      'START'
-      'X'
-      'Y'
-      'L'
-      'R'
-      'L2'
-      'R2'
-      'L3'
-      'R3')
-  end
-  object cb7b: TComboBox
-    Left = 275
-    Top = 98
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 40
-    OnChange = ComboChange
-  end
-  object cb8b: TComboBox
-    Left = 275
-    Top = 125
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 41
-    OnChange = ComboChange
-  end
-  object cb9b: TComboBox
-    Left = 275
-    Top = 152
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 42
-    OnChange = ComboChange
-  end
-  object cb10b: TComboBox
-    Left = 443
-    Top = 17
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 43
-    OnChange = ComboChange
-  end
-  object cb11b: TComboBox
-    Left = 443
-    Top = 44
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 44
-    OnChange = ComboChange
-  end
-  object cb12b: TComboBox
-    Left = 443
-    Top = 71
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 45
-    OnChange = ComboChange
-  end
-  object cb13b: TComboBox
-    Left = 443
-    Top = 98
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 46
-    OnChange = ComboChange
-  end
-  object cb14b: TComboBox
-    Left = 443
-    Top = 125
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 47
-    OnChange = ComboChange
-  end
-  object cb15b: TComboBox
-    Left = 443
-    Top = 152
-    Width = 60
-    Height = 21
-    Style = csDropDownList
-    TabOrder = 48
-    OnChange = ComboChange
   end
   object NLDJoystick1: TNLDJoystick
     Advanced = True
